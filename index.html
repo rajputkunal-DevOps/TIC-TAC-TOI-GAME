@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOI GAME || KUNAL RAJPUT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+        body{
+            background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+            font-family: "Tiny5", sans-serif;
+        }
+
+        .head {
+            text-align: center;
+            font-size: 38px;
+            background: linear-gradient(to bottom,#BBD2C5,#536976);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            text-shadow: #536976 2px 5px;
+        }
+
+        .buttons {
+            
+            justify-content: center;
+            button {
+                margin: 5px;
+                height: 75px;
+                width: 75px;
+                border-radius: 6px;
+                background-color: transparent;
+                border: 2px solid rgba(255, 250, 156, 0.33);
+                
+            }
+        
+        }
+
+        .line1 {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .line2 {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .line3 {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            box-shadow: rgba(255, 255, 255, 0.335) 3.8px -3.8px;
+            transition-duration: 0.8s;
+            transition-timing-function:ease-in-out;
+            font-size: 40px;
+            text-align: center;
+            color: rgb(255, 68, 68);
+            text-shadow: 3px 3px 6px black;
+        }
+
+        button:hover {
+            box-shadow: none;
+        }
+
+        .reset {
+            font-family: "Tiny5";
+            height: 60px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 60px;
+            color: silver;
+            text-shadow: 3px 3px 6px black;
+            background-color:transparent;
+            border: 2px solid rgba(255, 250, 156, 0.33);
+            border-radius: 8px;
+        }
+        .reset:active {
+            transform: translateY(2px);
+        }
+
+        .winner {
+            display: flex;
+            justify-content: center;
+            color: rgb(187, 0, 0);
+            font-size: 50px;
+            text-shadow: #4b00007e 2px 5px;
+        }
+
+        .foot {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            position:fixed;
+            bottom: 0px;
+            display: flex;
+            font-size: 40px;
+            justify-content: center;
+            background: linear-gradient(to bottom,#eeeeee,#85007c66);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            text-shadow: #ff00bf84 -2px -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>TIC TAC TOE GAME</h1>
+        </div>
+        <div class="buttons">
+            <div class="line1">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div><br>
+            <div class="line2">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div><br>
+            <div class="line3">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <div>
+            <p class="winner"></p>
+        </div>
+        <div>
+            <button class="reset" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <p class="foot">CREATED BY KUNAL RAJPUT</p>
+    <script src="script.js"></script>
+</body>
+</html>
